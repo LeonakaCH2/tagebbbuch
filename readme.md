@@ -20,6 +20,16 @@ Optional können alle Checks auch manuell getestet werden:
 ```bash
 pre-commit run --all-files
 ```
+
+### 🌐 Live-URL der Applikation
+
+Die Anwendung ist erreichbar unter:
+
+👉 [https://lb324-leont-hrdybec6b8haf9he.canadacentral-01.azurewebsites.net/]
+
+> Die URL stammt aus dem Azure Deployment Center und zeigt die laufende Instanz nach erfolgreichem Deployment aus dem `main`-Branch.
+
+
 ## Aufgabe 4 – Deployment auf Azure mit Passwort aus `.env`
 
 Die Applikation wird über das Azure Deployment Center automatisch ausgeliefert, sobald Änderungen in den `main`-Branch gemerged werden.
