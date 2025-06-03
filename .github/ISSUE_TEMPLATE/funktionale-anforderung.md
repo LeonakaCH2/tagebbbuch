@@ -16,12 +16,12 @@ assignees: ''
 ---
 
 ## Teilaufgaben
-- [x] Issue wurde korrekt betitelt  
-- [x] Alle Felder im Template wurden ausgefüllt  
+- [x] Issue wurde korrekt betitelt
+- [x] Alle Felder im Template wurden ausgefüllt
 - [ ] Entsprechendes Label gesetzt (funktional/qualitativ/rand)
 
 ---
 
 ## Weitere Hinweise
-Diese Anforderung wird gemäss dem GitHub Flow in einem eigenen Feature-Branch implementiert.  
+Diese Anforderung wird gemäss dem GitHub Flow in einem eigenen Feature-Branch implementiert.
 Bitte orientiere dich an der definierten Struktur und halte die Beschreibung präzise, damit andere Teammitglieder sie nachvollziehen und umsetzen können.
