@@ -20,5 +20,24 @@ Optional können alle Checks auch manuell getestet werden:
 ```bash
 pre-commit run --all-files
 ```
-## Aufgabe 4
-Erklären Sie hier, wie Sie das Passwort aus Ihrer lokalen `.env` auf Azure übertragen.
+## Aufgabe 4 – Deployment auf Azure mit Passwort aus `.env`
+
+Die Applikation wird über das Azure Deployment Center automatisch ausgeliefert, sobald Änderungen in den `main`-Branch gemerged werden.
+
+Damit das Login in der App korrekt funktioniert, muss das geheime Passwort, das lokal in der `.env`-Datei definiert ist, auf Azure übertragen werden.
+
+### 🔐 Passwort aus `.env` in Azure übertragen
+
+1. Öffne das Azure-Portal
+2. Navigiere zu deiner Web App unter **App Services**
+3. Gehe zu **Einstellungen** → **Umgebungsvariablen**
+4. Füge eine neue Einstellung hinzu:
+   - **Name:** `PASSWORD`
+   - **Wert:** Dein Passwort
+5. Speichern und App neu starten (wenn notwendig)
+
+### 🧠 Hinweis
+
+Die Anwendung verwendet `os.getenv("PASSWORD")`, um das Passwort zu lesen.
+Lokal kann dieses Passwort weiterhin über eine `.env`-Datei bereitgestellt werden.
+In Azure ist keine `.env`-Datei notwendig – die Umgebungsvariable wird direkt aus den App-Einstellungen geladen.
